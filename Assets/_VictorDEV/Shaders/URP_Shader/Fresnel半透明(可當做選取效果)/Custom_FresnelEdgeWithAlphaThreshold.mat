@@ -25,10 +25,10 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.26
-    - _FresnelPower: 2.03
-    - _FresnelThreshold: 0.41
+    - _Alpha: 0.341
+    - _FresnelPower: 10
+    - _FresnelThreshold: 0.581
     m_Colors:
-    - _FresnelColor: {r: 0.5896226, g: 1, b: 0.98890865, a: 1}
+    - _FresnelColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
