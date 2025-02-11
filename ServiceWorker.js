@@ -1,9 +1,9 @@
 const cacheName = "VictorDEV-TaiwanMapViewer-0.1";
 const contentToCache = [
     "Build/TaiwanMapViewer.loader.js",
-    "Build/TaiwanMapViewer.framework.js.gz",
-    "Build/TaiwanMapViewer.data.gz",
-    "Build/TaiwanMapViewer.wasm.gz",
+    "Build/TaiwanMapViewer.framework.js",
+    "Build/TaiwanMapViewer.data",
+    "Build/TaiwanMapViewer.wasm",
     "TemplateData/style.css"
 
 ];
