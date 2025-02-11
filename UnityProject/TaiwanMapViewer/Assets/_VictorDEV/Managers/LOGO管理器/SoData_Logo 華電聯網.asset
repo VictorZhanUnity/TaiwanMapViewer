@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ac1b86201229a49accaaebb815f310, type: 3}
+  m_Name: "SoData_Logo \u83EF\u96FB\u806F\u7DB2"
+  m_EditorClassIdentifier: 
+  componey: "\u83EF\u96FB\u806F\u7DB2\u80A1\u4EFD\u6709\u9650\u516C\u53F8"
+  componey_ENG: "\u8D85\u4E4E\u60F3\u50CF Ace for Any"
+  logo: {fileID: 21300000, guid: 54d7ac17a31f2c44d8a89c459a3bfb3e, type: 3}
