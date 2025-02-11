@@ -45,6 +45,7 @@ namespace VictorDev.CameraUtils
         /// </summary>
         private float originalSmoothTime { get; set; }
 
+        
         private void OnValidate()
         {
             originalSmoothTime = smoothTime;
@@ -245,13 +246,20 @@ namespace VictorDev.CameraUtils
         /// <summary>
         /// 攝影機置中
         /// </summary>
-        public static void MoveToCenter() => Instance.MoveTargetToPos(new Vector3(0, 1, 0));
+        public static void MoveToCenter()
+        {
+            Instance.target.position = new Vector3(0, 1, 0);
+            Instance.MoveTargetToPos(new Vector3(0, 1, 0));
+        }
+
         /// <summary>
         /// 移动到某个目标位置并旋转相机面向目标
         /// </summary>
         public static void MoveTargetTo(Transform obj, Vector3? posOffset = null) => Instance.MoveTargetToObj(obj, posOffset);
         public static void MoveTargetTo(Vector3 pos, Vector3? possOffset = null) => Instance.MoveTargetToPos(pos);
 
+        public void MoveTargetToObj(Transform obj) => MoveTargetToObj(obj, null);
+        
         /// <summary>
         /// 移动到某个目标位置并旋转相机面向目标
         /// </summary>

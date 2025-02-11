@@ -76,7 +76,7 @@ MonoBehaviour:
   distanceFromCamera:
     m_PersistentCalls:
       m_Calls: []
-  distanceThreshold: 3
+  distanceThreshold: 5
 --- !u!114 &8174480565531931628
 MonoBehaviour:
   m_ObjectHideFlags: 0
