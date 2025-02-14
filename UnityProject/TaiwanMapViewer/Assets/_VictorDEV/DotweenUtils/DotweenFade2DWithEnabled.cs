@@ -52,6 +52,8 @@ namespace VictorDev.DoTweenUtils
             {
                 cg = targetTrans.AddComponent<CanvasGroup>();
             }
+            DOTween.Kill(cg);
+
             Vector3 fromPos = (originalPos ?? Vector3.zero) + fromPosValue;
             float targetDelay = delay_Start + (isRandomDelay ? Random.Range(0, delay) : delay);
             cg.alpha = 0;
@@ -64,6 +66,12 @@ namespace VictorDev.DoTweenUtils
 
             gameObject.SetActive(true);
         }
-        private void OnDisable() => onDisabledEvent?.Invoke();
+        private void OnDisable()
+        {
+            DOTween.Kill(targetTrans);
+            DOTween.Kill(canvasGroup);
+            canvasGroup.alpha = 0;
+            onDisabledEvent?.Invoke();
+        }
     }
 }
